@@ -44,20 +44,20 @@ If both conditional probabilities are well defined, that is, if $P\left(X_{n+1} 
 
 ### Markov modelling
 Naive method: iterally multiply the transfer matrice and convergence to stationary vector.
-> # transfer_matrix p
-p = [0 0.5 1 0; 1/3 0 0 0.5; 1/3 0 0 0.5; 1/3 0.5 0 0]
-v = [0.25; 0.25; 0.25; 0.25]
-function iterally_multiply(v, p, i)
-    for _ in 1:i
-        v = p * v
-    end
-    return v
-end
-println(iterally_multiply(v, p, 3)) 
-println(iterally_multiply(v, p, 5))   
-println(iterally_multiply(v, p, 10))
-println(iterally_multiply(v, p, 20))
-println(iterally_multiply(v, p, 100))
+> #transfer_matrix p
+> p = [0 0.5 1 0; 1/3 0 0 0.5; 1/3 0 0 0.5; 1/3 0.5 0 0]
+> v = [0.25; 0.25; 0.25; 0.25]
+> function iterally_multiply(v, p, i)
+>     for _ in 1:i
+>         v = p * v
+>     end
+>     return v
+> end
+> println(iterally_multiply(v, p, 3)) 
+> println(iterally_multiply(v, p, 5))   
+> println(iterally_multiply(v, p, 10))
+> println(iterally_multiply(v, p, 20))
+> println(iterally_multiply(v, p, 100))
 
 <div id="optimazedmodelling"/>
 
