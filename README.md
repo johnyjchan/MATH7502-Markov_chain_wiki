@@ -57,8 +57,23 @@ If both conditional probabilities are well defined, that is, if $P\left(X_{n+1} 
 
 ###### Pagerank
 
-PageRank was born in 1998 in the hands of Google's founders Larry Page and Sergey Brin. At the end of the last century when commercial search engines were just starting out, the search engine were not so convenient that time. The semantic analysis of the search terms, the web crawl, and the ranking stragtegy together determine the efficiency of information retrieval. Among them, the ranking algorithm is the most important.
+<div id="application"/>
+
+### Application
+
+<div id="pagerank"/>
+
+###### Pagerank
+
+
+PageRank was born in 1998 in the hands of Google's founders Larry Page and Sergey Brin. At the end of the last century when commercial search engines were just starting out, the search engine were not so convenient. The semantic analysis of the search terms, the web crawl, and the ranking stragtegy together determine the efficiency of information retrieval. Among them, the ranking algorithm is the most important.  Markov chain is one of the best measurement that time.
+
+![page_rank1](https://pic4.zhimg.com/80/v2-2372589ce0e3ed1a1211f108693c3cc7_hd.jpg)
+Assuming that there are four websites in the internal as the figure shown.
+![page_rank1](https://pic3.zhimg.com/80/v2-6e50164f39ee6e6e5e76b26aa3e31efa_hd.jpg)
 
 <div id="gambling"/>
+
+###### Gambling
 
 ###### Gambling
