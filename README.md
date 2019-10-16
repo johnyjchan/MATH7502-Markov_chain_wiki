@@ -43,7 +43,21 @@ If both conditional probabilities are well defined, that is, if $P\left(X_{n+1} 
 <div id="markov"/>
 
 ### Markov modelling
-
+Naive method: iterally multiply the transfer matrice and convergence to stationary vector.
+> # transfer_matrix p
+p = [0 0.5 1 0; 1/3 0 0 0.5; 1/3 0 0 0.5; 1/3 0.5 0 0]
+v = [0.25; 0.25; 0.25; 0.25]
+function iterally_multiply(v, p, i)
+    for _ in 1:i
+        v = p * v
+    end
+    return v
+end
+println(iterally_multiply(v, p, 3)) 
+println(iterally_multiply(v, p, 5))   
+println(iterally_multiply(v, p, 10))
+println(iterally_multiply(v, p, 20))
+println(iterally_multiply(v, p, 100))
 
 <div id="optimazedmodelling"/>
 
@@ -68,9 +82,10 @@ If both conditional probabilities are well defined, that is, if $P\left(X_{n+1} 
 
 PageRank was born in 1998 in the hands of Google's founders Larry Page and Sergey Brin. At the end of the last century when commercial search engines were just starting out, the search engine were not so convenient. The semantic analysis of the search terms, the web crawl, and the ranking stragtegy together determine the efficiency of information retrieval. Among them, the ranking algorithm is the most important.  Markov chain is one of the best measurement that time.
 
-![page_rank1](https://pic4.zhimg.com/80/v2-2372589ce0e3ed1a1211f108693c3cc7_hd.jpg)
+![page_rank](https://pic4.zhimg.com/80/v2-2372589ce0e3ed1a1211f108693c3cc7_hd.jpg)
 Assuming that there are four websites in the internal as the figure shown.
 ![page_rank1](https://pic3.zhimg.com/80/v2-6e50164f39ee6e6e5e76b26aa3e31efa_hd.jpg)
+![page_rank2](https://pic3.zhimg.com/80/v2-714bae6e50e142556b8972658c78677a_hd.jpg)
 
 <div id="gambling"/>
 
