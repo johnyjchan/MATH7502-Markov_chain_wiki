@@ -19,19 +19,19 @@
     
 <div id="origin"/>
 
-#### Origin
+### Origin
 
 Markov named after the Russian mathematician Andrey Markov. His was best known for his work on stochastic processes. A primary subject of his research later became known as Markov chains and Markov processes.
 
 <div id="intro"/>
 
-#### Introduction
+### Introduction
 
 At each step of Markov chain, the system can change from one state to another or keep the current state according to the probability distribution. (We have transition matrix to describe the probability.) The change of state is called transition, and the probability related to different state changes is called transition probability. Random walk or Brownian motion is an example of Markov chain. The state of each step in random walk is the point in the graph. Each step can move to any adjacent point. The probability of moving to each point is the same here, no matter what the previous walk path is. (The memorylessness of stochastic process.)
 
 <div id="definition"/>
 
-#### Definition
+### Definition
 
 A discrete-time Markov chain is a sequence of random variables $X_{1}, X_{2}, X_{3}, ... $with the Markov property, namely that the probability of moving to the next state depends only on the present state and not on the previous states:
 
@@ -42,20 +42,22 @@ If both conditional probabilities are well defined, that is, if $P\left(X_{n+1} 
 
 <div id="markov"/>
 
-#### Markov modelling
+### Markov modelling
 
 
 <div id="optimazedmodelling"/>
 
-#### Stationary distribution & optimazed modelling
+### Stationary distribution & optimazed modelling
 
 <div id="application"/>
 
-#### Application
+### Application
 
 <div id="pagerank"/>
 
 ###### Pagerank
+
+PageRank was born in 1998 in the hands of Google's founders Larry Page and Sergey Brin. At the end of the last century when commercial search engines were just starting out, the search engine were not so convenient that time. The semantic analysis of the search terms, the web crawl, and the ranking stragtegy together determine the efficiency of information retrieval. Among them, the ranking algorithm is the most important.
 
 <div id="gambling"/>
 
